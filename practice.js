@@ -62,12 +62,17 @@ let = ["apples", "milk", "eggs", "bread"]
 //name (a string), color (a string), age (a number),
 //and goodBoy (a boolean).
 
-//Code Here
+let dog = {
+  name: "Spot",
+  color: "Brown",
+  age: 4,
+  goodBoy: true
+}
 
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
-//Code Here
+let devMountainClassPet = Object.assign(dog, name)
 
 //////////////////PROBLEM 10////////////////////
 
@@ -78,7 +83,17 @@ let = ["apples", "milk", "eggs", "bread"]
 // If the name parameter is anything else, return 'Cool name, NAMEPARAM'
 // with NAMEPARAM being the name parameter being passed in
 
-// Code here
+function nameCheck(name){
+  if (name == 'Steven') {
+    console.log('What\'s up Steven?')
+  }
+  else if (name == 'Bryan') {
+    console.log('Hey Bryan!')
+  }
+  else {
+    console.log('Cool name, ' + name + ".")
+  }
+}
 
 //////////////////PROBLEM 11////////////////////
 
@@ -86,12 +101,14 @@ let = ["apples", "milk", "eggs", "bread"]
 // that will be numbers.
 // The add function should return the two parameters added together
 
-//Code Here
+function add(n1, n2){
+  return n1 + n2
+}
 
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
 
-//Code Here
+let mathSum = add(3, 4)
 
 //////////////////PROBLEM 12////////////////////
 
