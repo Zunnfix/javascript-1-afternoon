@@ -85,13 +85,13 @@ let devMountainClassPet = dog.name;
 
 function nameCheck(name){
   if (name == 'Steven') {
-    return 'What is up Steven?'
+    return 'What is up Steven?';
   }
   else if (name == 'Bryan') {
-    return 'Hey Bryan!'
+    return 'Hey Bryan!';
   }
   else {
-    return 'Cool name, ' + name
+    return 'Cool name, ' + name;
   }
 }
 
@@ -121,16 +121,16 @@ let mathSum = add(3, 4);
 
 function faveColorFinder(color){
   if (color == 'red') {
-    return 'red is a great color'
+    return 'red is a great color';
   }
   else if (color == 'green') {
-    return 'green is a solid favorite color'
+    return 'green is a solid favorite color';
   }
   else if (color == 'black') {
-    return 'so trendy'
+    return 'so trendy';
   }
   else {
-    return 'you need to evaluate your favorite color choice'
+    return 'you need to evaluate your favorite color choice';
   }
 }
 
@@ -159,13 +159,13 @@ function pond() {
 let globalScope = ["duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["rubberDuck", "sailorDuck"];
+let bathroomScope = ["duck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["sailorDuck"];
+let bathtubScope = ["duck", "rubberDuck", "sailorDuck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["realDuck"];
+let pondScope = ["duck", "realDuck"];
 
 //////////////////PROBLEM 14////////////////////
 
