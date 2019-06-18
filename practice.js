@@ -44,8 +44,8 @@ function greeting(name) {
 //Rewrite the function greeting as a function expression.
 //Name it newGreeting.
 
-function newGreeting(name) {
-  return "Hello" + name;
+let newGreeting = function(name) {
+  return "Hello, " + name;
 }
 
 //////////////////PROBLEM 8////////////////////
@@ -53,7 +53,7 @@ function newGreeting(name) {
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
-let = ["apples", "milk", "eggs", "bread"];
+let groceries = ["apples", "milk", "eggs", "bread"];
 
 //////////////////PROBLEM 9////////////////////
 
@@ -63,8 +63,8 @@ let = ["apples", "milk", "eggs", "bread"];
 //and goodBoy (a boolean).
 
 let dog = {
-  name: "Spot",
-  color: "Brown",
+  name: 'Spot',
+  color: 'Brown',
   age: 4,
   goodBoy: true
 }
@@ -72,7 +72,7 @@ let dog = {
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
-let devMountainClassPet = Object.assign(dog, name);
+let devMountainClassPet = dog.name;
 
 //////////////////PROBLEM 10////////////////////
 
@@ -85,13 +85,13 @@ let devMountainClassPet = Object.assign(dog, name);
 
 function nameCheck(name){
   if (name == 'Steven') {
-    console.log('What\'s up Steven?');
+    return 'What is up Steven?'
   }
   else if (name == 'Bryan') {
-    console.log('Hey Bryan!');
+    return 'Hey Bryan!'
   }
   else {
-    console.log('Cool name, ' + name + ".");
+    return 'Cool name, ' + name
   }
 }
 
@@ -121,16 +121,16 @@ let mathSum = add(3, 4);
 
 function faveColorFinder(color){
   if (color == 'red') {
-    console.log('Red is a great color!');
+    return 'red is a great color'
   }
   else if (color == 'green') {
-    console.log('Green is a solid favorite color!');
+    return 'green is a solid favorite color'
   }
   else if (color == 'black') {
-    console.log('So trendy...');
+    return 'so trendy'
   }
   else {
-    console.log('You need to evaluate your favorite color choice.');
+    return 'you need to evaluate your favorite color choice'
   }
 }
 
@@ -159,7 +159,7 @@ function pond() {
 let globalScope = ["duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["sailorDuck", "rubberDuck"];
+let bathroomScope = ["rubberDuck", "sailorDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
 let bathtubScope = ["sailorDuck"];
